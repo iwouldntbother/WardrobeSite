@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+#siteContainer {
+  scroll-snap-type: mandatory;
+}
+
+:root {
+  --green: #00A652;
+  --gray: #444444;
+}
+
+/* Header */
+
+#headerContainer {
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  background: white;
+}
+
+#headerContainer img {
+  max-height: 7vh;
+}
+
+/* Welcome */
+
+#welcomeContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: end;
+}
+
+#welcomeContainer h1 {
+  font-size: 7vw;
+  margin: 0;
+}
+
+#welcomeContainer p {
+  font-size: 2vw;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* About */
+
+#aboutContainer {
+  width: 100vw;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #00A652;
+  color: white;
+}
+
+#aboutContainer p {
+  max-width: 50vw;
+  text-align: center;
+}
+
+/* Features */
+
+#featuresContainer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.featureHolder {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.feature {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-2 {
+  width: 50vw;
+}
+
+.feature-3 {
+  width: calc(100vw / 3);
+}
+
+canvas {
+  max-height: 80vh;
+}
+
+.feature p {
+  max-width: 40vw;
+}
+
+/* Contact */
+
+#contactContainer {
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contactContainer form {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+}
+
+textarea {
+  resize: none;
+}
+
+#buttonHolder {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1vh;
+}
+
+#buttonHolder button {
+  width: 12vw;
+  margin: 0.25vw;
+  padding: 0.5vw 0;
+  color: white;
+  border: none;
+}
+
+#buttonHolder #signupBTN {
+  background-color: #00A652;
+}
+
+#buttonHolder #contactBTN {
+  background-color: #f0932b;
+}
+
+.disclaimer {
+  font-size: 0.6vw;
+}
+
+/* Footer */
+
+#footerContainer {
+  background-color: var(--gray);
+  color: white;
+  padding: 1vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#footerContainer p {
+  font-size: 0.75vw;
+  margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .featureHolder {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .mobileReverse {
+    flex-direction: column-reverse;
+  }
+
+  .feature {
+    height: 40vh;
+  }
+
+  .feature img {
+    max-height: 40vh;
+    width: auto;
+  }
+
+  #headerContainer {
+    height: 5vh;
+  }
+
+  #headerContainer img {
+    height: 5vh;
+  }
+
+  #welcomeContainer h1 {
+    font-size: 12vw;
+  }
+
+  #welcomeContainer p {
+    font-size: 3vw;
+  }
+
+  #aboutContainer h1 {
+    margin: 0;
+  }
+  
+  #aboutContainer p {
+    font-size: 3vw;
+  }
+
+  #contactContainer p {
+    font-size: 3vw;
+  }
+
+  #contactContainer form {
+    width: 80vw;
+  }
+
+  
+  #buttonHolder button {
+    width: 39vw;
+    margin: 0.5vw;
+    padding: 1vw 0;
+  }
+
+  .disclaimer {
+    font-size: 2vw !important;
+  }
+
+  #footerContainer p {
+    font-size: 2.5vw;
+  }
+
+}

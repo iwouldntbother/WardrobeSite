@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exit Studios - Wardrobe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div id='siteContainer'>
+
+    <header id='headerContainer'>
+      <img src='images/ExitStudiosLogo.svg' alt='LogoSVG'>
+    </header>
+
+    <div id='welcomeContainer'>
+      <h1>Wardy&trade;</h1>
+      <p>Wardrobes, done right.</p>
+    </div>
+
+    <div id='aboutContainer'>
+      <h1>About</h1>
+      <p>Wardy&trade; is an all-in-one system to store, manage and share your clothes and outfits!
+        No longer are the days of spending hours pouring through your wardrobe finding the best outfit or panicing the night before an event.</p>
+    </div>
+
+    <div id='featuresContainer'>
+    
+      <div class='featureHolder' id='featureOne'>
+        <div class='feature feature-2'>
+          <div>
+            <h1>Need an outfit plan?</h1>
+            <p>You can store and manage outfits in the app, even share them with friends.</p>
+          </div>
+        </div>
+        <div class='feature feature-2'>
+          <canvas id='seqOneCan'></canvas>
+        </div>
+      </div>
+
+      <div class='featureHolder mobileReverse' id='featureTwo' >
+        <div class='feature feature-2'>
+          <canvas id='seqTwoCan'></canvas>
+        </div>
+        <div class='feature feature-2'>
+          <div>
+            <h1>Store your whole wardrobe!</h1>
+            <p>All your clothes in one place!</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class='featureHolder'  id='featureThree'>
+        <div class='feature feature-2'>
+          <div>
+            <h1>Worried about the weather?</h1>
+            <p>Enable live weather updates to always be dressed appropriately.</p>
+          </div>
+        </div>
+        <div class='feature feature-2'>
+          <canvas id='seqThreeCan'></canvas>
+        </div>
+      </div>
+
+      <div class='featureHolder mobileReverse'  id='featureFour'>
+        <div class='feature feature-2'>
+          <canvas id='seqFourCan'></canvas>
+        </div>
+        <div class='feature feature-2'>
+          <div>
+            <h1>Lend clothes to friends with ease!</h1>
+            <p>Track who has borrowed your clothes and notifiy them when you need them back.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class='featureHolder'  id='featureFive'>
+        <div class='feature feature-2'>
+          <div>
+            <h1>Clothing wishlist</h1>
+            <p>No longer go blank when shopping for clothes, or view your friends wishlist for present ideas!</p>
+          </div>
+        </div>
+        <div class='feature feature-2'>
+          <canvas id='seqFiveCan'></canvas>
+        </div>
+      </div>
+
+    </div>
+
+    <div id='contactContainer'>
+      <h1>Contact</h1>
+      <p>Get in touch with us or sign up to the beta bellow.</p>
+      <form>
+        <label>Name:</label>
+        <input type='text' placeholder='...'>
+        <label>Email:</label>
+        <input type='email' placeholder='...'>
+        <label>Tell us why:</label>
+        <textarea id='textInput' placeholder='...' rows='5'></textarea>
+        <div id='buttonHolder'>
+          <button id='signupBTN' type='button'>Sign Up</button>
+          <button id='contactBTN' type='button'>Contact</button>
+        </div>
+      </form>
+      <p class='disclaimer'>(This form is non-functional and is purely here for aesthetics.)</p>
+    </div>
+
+    <div id='footerContainer'>
+      <div>
+        <p>All rights reserved by Exit Studios.</p>
+        <p>Site built by Will Westwood.</p>
+        <p>This isn't real, at all. It's for a student project</p>
+      </div>
+      <div>
+        <p>Information & Systems<br>Unit 7.3<br>GCD CSM</p>
+      </div>
+    </div>
+    
+  </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js'></script>
+  <script src='script.js' defer></script>
+
+</body>
+</html>

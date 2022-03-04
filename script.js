@@ -190,3 +190,13 @@ function myFunction(x) {
 
 var x = window.matchMedia("(max-width: 600px)")
 myFunction(x)
+
+document.addEventListener('scroll', () => {
+  if (window.scrollY > window.innerHeight) {
+    document.body.style.backgroundColor = '#444444';
+    // console.log('gray')
+  } else {
+    document.body.style.backgroundColor = '#FFFFFF'
+    // console.log('white')
+  }
+})

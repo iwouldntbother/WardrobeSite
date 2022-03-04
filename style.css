@@ -116,6 +116,11 @@ canvas {
   max-width: 40vw;
 }
 
+.feature img {
+  max-height: 80vh;
+  width: auto;
+}
+
 /* Contact */
 
 #contactContainer {

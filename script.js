@@ -182,9 +182,10 @@ function myFunction(x) {
   if (x.matches) {
     loadStaticImages();
   } else {
-    sequenceOne();
-    sequenceTwo();
-    sequenceThree();
+    loadStaticImages();
+    // sequenceOne();
+    // sequenceTwo();
+    // sequenceThree();
   }
 }
 
